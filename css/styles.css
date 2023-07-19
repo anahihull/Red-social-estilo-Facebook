@@ -1,0 +1,381 @@
+:root {
+	--texto: rgba(255,255,255, .7);
+	--blanco: #fff;
+	--input: #3A3B3C;
+	--input-hover: #4b4d4e;
+	--activo: #2D88FF;
+	--gris-claro: #B0B3B8;
+	--fondo-contenido: #242526;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #18191A;
+	color: var(--texto);
+}
+
+a {
+	color: var(--texto);
+	text-decoration: none;
+}
+
+/*Header*/
+
+header {
+	background: var(--fondo-contenido);
+}
+
+header .logo {
+	display: inline-block;
+}
+
+header .logo svg {
+	color: var(--blanco);
+	height: 35px;
+	width: 35px;
+}
+
+header .search-bar {
+	position: relative;
+	width: 100%;
+}
+
+header .search-bar input {
+	width: 100%;
+	border: none;
+	background: var(--input);
+	color: var(--texto);
+	height: 40px;
+	border-radius: 100px;
+	padding: 0 20px 0 40px;
+}
+
+header .search-bar .icon {
+	position: absolute;
+	top: 6px;
+	left: 15px;
+	color: var(--texto);
+}
+
+/*Menu*/
+header .menu a {
+	display: inline-block;
+	padding: 10px 40px;
+}
+
+header .menu a:hover {
+	color: var(--texto);
+	background: var(--input);
+	border-radius: 5px;
+}
+
+header .menu a svg {
+	width: 25px;
+	height: 25px;
+}
+
+header .menu .active {
+	border-bottom: 4px solid var(--activo);
+	color: var(--activo);
+}
+
+header .menu .active:hover {
+	background: none;
+	border-radius: 0px;
+	color: var(--activo);
+}
+
+/* buttons */
+header .buttons a {
+	background: var(--input);
+	display: inline-flex;
+	border-radius: 100px;
+	min-width: 40px;
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+	margin-left: 7px;
+}
+
+header .buttons a:hover {
+	background: #4b4d4e;
+	color: var(--texto);
+}
+
+header .buttons .profile {
+	height: 40px;
+	padding: 0 7px;
+	background: none;
+	min-width: max-content;
+}
+
+header .buttons .profile img {
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+	margin-right: 5px;
+}
+
+/* --- Aside ---  */
+aside {
+	height: 100vh;
+	overflow: auto;
+	padding-top: 60px;
+}
+
+/* Aside Enlaces Rapidos */
+.links > nav a {
+	display: flex;
+	align-items: center;
+	color: var(--blanco);
+	padding: 10px 10px;
+	border-radius: 3px;
+}
+
+.links > nav a:hover {
+	background: var(--input-hover);
+}
+
+.links .profile img {
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+	margin-right: 10px;
+}
+
+.links .icon {
+	margin-right: 20px;
+}
+
+.links .icon svg {
+	height: 20px;
+	width: 20px;
+}
+
+/* Footer */
+footer {
+	margin: 40px 0;
+}
+
+footer nav a {
+	font-size: 14px;
+	margin-right: 7px;
+	color: var(--gris-claro);
+}
+
+footer nav a:hover {
+	text-decoration: underline;
+	color: var(--gris-claro);
+}
+
+/* --- Contactos ---  */
+.contacts .section {
+	margin-bottom: 20px;
+}
+
+.contacts .title {
+	font-size: 18px;
+	font-weight: bold;
+	color: var(--gris-claro);
+	margin-bottom: 10px;
+}
+
+.contacts .ads {
+	display: block;
+	max-height: 100px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.contacts .ads img {
+	width: 100%;
+}
+
+.contacts nav a {
+	display: flex;
+	align-items: center;
+	color: var(--blanco);
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.contacts nav a:hover {
+	background: var(--input-hover);
+}
+
+.contacts nav a img {
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+	margin-right: 10px;
+}
+
+/*main*/
+main {
+	padding-top: 70px;
+}
+
+main .post,
+main .posts {
+	background: var(--fondo-contenido);
+	width: 100%;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+main .post .forms {
+	display: flex;
+	justify-self: start;
+}
+
+main .picture {
+	display: block;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	border-radius: 100px;
+	margin-right: 10px;
+}
+
+main .picture img {
+	width: 100%;
+}
+
+main .post .forms input {
+	width: 100%;
+	border: none;
+	background: var(--input);
+	height: 40px;
+	border-radius: 100px;
+	padding: 0 20px;
+	color: var(--texto);
+}
+
+main .post .buttons a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+main .post .buttons a:hover {
+	background: var(--input-hover);
+	color: var(--texto);
+}
+
+main .post .buttons a svg {
+	margin-right: 7px;
+}
+
+/*Posts*/
+main .posts .header {
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+main .posts .header .data {
+	display: flex;
+	flex-direction: column;
+}
+
+main .posts .header .data .name {
+	color: var(--blanco);
+}
+
+main .posts .header .data .hour {
+	color: var(--texto);
+	font-size: 14px;
+}
+
+main .posts .header .data .hour:hover {
+	color: var(--texto);
+}
+
+main .posts .header .data a:hover {
+	color: var(--texto);
+	text-decoration: underline;
+}
+
+main .posts .body p {
+	margin-bottom: 10px;
+	color: var(--blanco);
+}
+
+main .posts .body img {
+	width: 100%;
+}
+
+main .posts .comments {
+	padding: 10px;
+}
+
+main .posts .comments .like-button svg {
+	margin-right: 10px;
+	color: #e75151;
+}
+
+main .posts .comments a,
+main .posts .comments .like-button {
+	color: var(--texto);
+}
+
+main .posts .comments a:hover {
+	text-decoration: underline;
+	color: var(--texto);
+}
+
+main .posts .buttons button {
+	width: 100%;
+	border: none;
+	background: none;
+	color: var(--texto);
+	padding: 10px;
+	border-radius: 3px;
+}
+
+main .posts .buttons button:hover {
+	background: #3a3b3c;
+}
+
+main .posts .buttons button svg {
+	margin-right: 5px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.links,
+	.contacts {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	header {
+		padding-top: 10px;
+	}
+
+	.menu {
+		margin-top: 10px;
+	}
+
+	.main-content {
+		padding-top: 70px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	header .menu a {
+		padding: 10px 20px;
+	}
+}
